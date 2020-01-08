@@ -14,7 +14,7 @@ cd -
 
 echo "4. install python requirements"
 /usr/local/bin/python3.8 -m pip install -U pip
-/usr/local/bin/python3.8 -m pip install -r requirements.txt
+/usr/local/bin/python3.8 -m pip install -r requirements.txt -i https://pypi.doubanio.com/simple/
 
 echo "5. run supervisor service"
 mkdir -p /conf/supervisor
