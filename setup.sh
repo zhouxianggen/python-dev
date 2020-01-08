@@ -13,6 +13,7 @@ make altinstall
 cd -
 
 echo "4. install python requirements"
+/usr/local/bin/python3.8 -m pip install -U pip
 /usr/local/bin/python3.8 -m pip install -r requirements.txt
 
 echo "5. run supervisor service"
