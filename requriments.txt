@@ -1,0 +1,15 @@
+pytest
+psutil
+requests
+kafka-python
+tornado
+mysqlclient
+sqlalchemy
+websockets
+kazoo
+croniter
+paho-mqtt
+setproctitle
+python-prctl
+redis
+supervisor
