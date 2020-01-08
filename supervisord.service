@@ -1,0 +1,13 @@
+[Unit]
+Description=supervisord - Supervisor process control system for UNIX
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/supervisord -c /conf/supervisor/supervisord.conf
+ExecReload=/usr/local/bin/supervisorctl -c /conf/supervisor/supervisord.conf reload
+ExecStop=/usr/local/bin/supervisorctl -c /conf/supervisor/supervisord.conf shutdown
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
